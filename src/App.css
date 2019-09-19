@@ -59,7 +59,6 @@ h1 {
   left: 7vw;
   margin-top: 55%;
   padding-top: 5vh;
-
 }
 .homeButton {
   position: relative;
@@ -90,13 +89,13 @@ h1 {
   -webkit-transition: 0.08s ease-in;
 }
 
-.homeButton:nth-child(2){
+.homeButton:nth-child(2) {
   margin-left: 2vw;
   background: #1abc9c;
   border: none;
 }
-.homeButton:nth-child(1):hover{
-  background:#e7f2dd;
+.homeButton:nth-child(1):hover {
+  background: #e7f2dd;
   color: #117563;
   transition: 0.08s ease-in;
   -o-transition: 0.08s ease-in;
@@ -104,7 +103,7 @@ h1 {
   -moz-transition: 0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
 }
-.homeButton:nth-child(2):hover{
+.homeButton:nth-child(2):hover {
   opacity: 0.6;
   transition: 0.08s ease-in;
   -o-transition: 0.08s ease-in;
@@ -121,7 +120,7 @@ h1 {
   position: absolute;
   opacity: 0.15;
 }
-.h3{
+.h3 {
   font-family: "Montserrat", sans-serif;
   position: relative;
   float: right;

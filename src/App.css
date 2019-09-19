@@ -23,6 +23,119 @@
   color: #61dafb;
 }
 
+.landing {
+  background: #117563;
+  min-height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.landinghr {
+  height: 12px;
+  background: #1abc9c;
+  border: none;
+  position: relative;
+  margin-top: 0;
+}
+h1 {
+  color: #e7f2dd;
+  font-family: "Libre Baskerville", serif;
+  font-size: 8vw;
+}
+.homeText {
+  position: absolute;
+  left: 7vw;
+  /* top: 12vh;  */
+  padding-bottom: 10vh;
+  padding-top: 15vh;
+  font-size: 8vh;
+}
+.homeButtons {
+  position: absolute;
+  left: 7vw;
+  margin-top: 55%;
+  padding-top: 5vh;
+
+}
+.homeButton {
+  position: relative;
+  top: 3vh;
+  width: 18vw;
+  height: calc(1.5em + 1rem + 20px);
+  background: transparent;
+  border: 3px solid #edf5e0;
+  display: inline-block;
+  font-weight: 400;
+  font-family: "Prompt", sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  /* background-color: transparent; */
+  /* border: 1px solid transparent; */
+  color: #edf5e0;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  outline: 0;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.homeButton:nth-child(2){
+  margin-left: 2vw;
+  background: #1abc9c;
+  border: none;
+}
+.homeButton:nth-child(1):hover{
+  background:#e7f2dd;
+  color: #117563;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+.homeButton:nth-child(2):hover{
+  opacity: 0.6;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+.randomImage {
+  position: relative;
+  margin-top: -10vh;
+  opacity: 0.1;
+}
+.randomImage2 {
+  position: absolute;
+  opacity: 0.15;
+}
+.h3{
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  float: right;
+  font-weight: 800;
+  color: #edf5e0;
+  letter-spacing: 0.05em;
+  margin-right: 10px;
+}
+
+/* .right {
+  background-image: url('./components/rewind.png');
+  background-repeat: no-repeat;
+  background-position: center;
+} */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

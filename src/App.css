@@ -48,19 +48,21 @@ h1 {
 }
 .homeText {
   position: absolute;
-  left: 7vw;
+  left: 8vw;
   /* top: 12vh;  */
-  padding-bottom: 10vh;
+  padding-bottom: 8vh;
   padding-top: 15vh;
-  font-size: 8vh;
+  font-size: 6vh;
 }
+
 .homeButtons {
   position: absolute;
-  left: 7vw;
-  margin-top: 55%;
+  /* left: 7vw; */
+  margin-top: 45%;
   padding-top: 5vh;
 }
 .homeButton {
+  text-decoration: none;
   position: relative;
   top: 3vh;
   width: 18vw;
@@ -75,9 +77,10 @@ h1 {
   /* background-color: transparent; */
   /* border: 1px solid transparent; */
   color: #edf5e0;
-  padding: 0.375rem 0.75rem;
+  padding: 1rem 0.75rem;
   font-size: 1.3rem;
   line-height: 1.5;
+  text-align: center;
   outline: 0;
   overflow: hidden;
   z-index: 1;
@@ -88,13 +91,23 @@ h1 {
   -moz-transition: 0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
 }
-
-.homeButton:nth-child(2) {
+a,
+u {
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+li:nth-child(2) > .homeButton {
   margin-left: 2vw;
   background: #1abc9c;
   border: none;
+  text-decoration: none;
 }
-.homeButton:nth-child(1):hover {
+.homeButton:nth-child(1) {
+  text-decoration: none;
+}
+li:nth-child(1) > .homeButton:hover{
   background: #e7f2dd;
   color: #117563;
   transition: 0.08s ease-in;
@@ -103,13 +116,15 @@ h1 {
   -moz-transition: 0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
 }
-.homeButton:nth-child(2):hover {
-  opacity: 0.6;
+li:nth-child(2) > .homeButton:hover {
+  opacity: 0.7;
   transition: 0.08s ease-in;
   -o-transition: 0.08s ease-in;
   -ms-transition: 0.08s ease-in;
   -moz-transition: 0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
+  color: #e7f2dd;
+  transform: scale(0.995);
 }
 .randomImage {
   position: relative;
@@ -129,6 +144,16 @@ h1 {
   letter-spacing: 0.05em;
   margin-right: 10px;
 }
+ul {
+  display: inline-flex;
+  padding-left: 0px;
+  position: relative;
+  left: 7vw;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
 
 /* .right {
   background-image: url('./components/rewind.png');
@@ -141,5 +166,107 @@ h1 {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/*
+  * media queries goes here
+ */
+
+@media only screen and (min-width: 375px) and (max-width: 380px) {
+  ul {
+    top: 10vh;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+  ul {
+    top: 15vh;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1445px) {
+  .homeText {
+    width: 120%;
+  }
+
+  ul {
+    position: relative;
+    top: 10vh;
+  }
+}
+@media only screen and (min-width: 425px) {
+  ul {
+    top: 5vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .homeText {
+    font-size: 4vh;
+    width: 90%;
+    line-height: 1.2em;
+    /* padding-top: 10vh; */
+  }
+  .homeButton {
+    display: block;
+    width: 70vw;
+    position: relative;
+    margin-top: 15%;
+  }
+  ul {
+    display: block;
+    position: relative;
+    left: 5vw;
+    /* top: -1vh; */
+  }
+  li {
+    display: block;
+  }
+  li:nth-child(2) {
+    margin-left: -2vw;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .homeText {
+    width: 135%;
+    font-size: 5vh;
+  }
+  ul {
+    top: 15vh;
+  }
+  li:nth-child(2) {
+    position: relative;
+    top: -5vh;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .homeText {
+    width: 145%;
+    font-size: 5vh;
+  }
+  ul {
+    top: 30vh;
+    display: inline-grid;
+  }
+  li {
+    position: relative;
+    left: 0;
+    padding-left: 0px;
+
+    display: contents;
+    font-size: 25px;
+  }
+  .homeButton:nth-child(1) {
+    text-decoration: none;
+    width: 45vw;
+    height: 6.5vh;
+    font-size: 30px;
+  }
+  li:nth-child(2) > .homeButton {
+    margin-top: 3vh;
+    position: relative;
+    margin-left: 0;
   }
 }

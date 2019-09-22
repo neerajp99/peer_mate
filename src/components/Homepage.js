@@ -11,12 +11,30 @@ class Homepage extends Component {
         <Navbar />
         <div className="col-md-6">
           <h1 class="homeText">
-            Find a peer for course related help and freelance jobs.
+            Get academic help from the best in your course.
+            <br />
+            Or, make money helping your peers succeed.
           </h1>
           <br />
           <div className="homeButtons">
-            <button className="homeButton">I'm a mentor</button>
-            <button className="homeButton">I'm a mentee</button>
+            <ul>
+              <li>
+                <a
+                  className="homeButton"
+                  href="https://forms.gle/gjfczWfqEVGYVTYR6"
+                >
+                  I want to help
+                </a>
+              </li>
+              <li>
+                <a
+                  className="homeButton"
+                  href="https://forms.gle/9ZvT2UjeQE6eJkJs9"
+                >
+                  I need help
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <img src={randomImage} alt="random" className="randomImage" />
